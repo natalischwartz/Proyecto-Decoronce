@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Poppins', sans-serif; ;
 }
 
 a{
@@ -14,29 +14,28 @@ a{
     width: 5%;
 }
 
-h1{
+h2{
     font-size: 30px;
     color: rgba(11, 10, 10, 0.703);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 body{
     width: 100%;
     background-image: url("/Imagenes/fondo-de-pantalla2.png");
     background-repeat:no repeat;
-    background-position: center;
     background-size:cover;
+    background-position: center;
 }
 
 h5{
     opacity: 0.7;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
     color:whitesmoke;
 }
 
 h4{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:20px ;
     color:whitesmoke;
     font-weight: bold;
@@ -45,7 +44,6 @@ h4{
 
 h3{
     font-size: 15px;
-    font-family: sans-serif;
     font-weight:bold;
 }
 
@@ -72,7 +70,6 @@ h3{
     transition: all 300ms;
     width: 100%;
     height: 60vh;
-    
 }
 
 .carousel-inner .carousel-item img:hover{
@@ -88,7 +85,6 @@ p{
     text-shadow: 2px 2px 5px black;
     font-size: 15px;
     padding: 5px 5px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .parteAbajo{
@@ -106,3 +102,120 @@ i{
     font-size: 20px;
 }
 
+/*CATEGORIAS*/
+
+/*Botones*/
+
+
+.boton-principal-alt{
+    display: flex;
+    margin-top: 8px;
+    padding: 7px 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#fff;
+    cursor: pointer;
+    line-height: 16px;
+    background-color: unset;
+    border: 0.1rem solid #fff;
+    border-radius: 0.3rem;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.categorias{
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.categorias div {
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.categorias div > * {
+    z-index: 1;
+    
+}
+
+.categorias div:nth-child(1) {
+    background:url("Imagenes/fondo-de-pantalla.jpg") 50% 50%/cover no-repeat;
+}
+
+.categorias div:nth-child(2) {
+    background: url("/Imagenes/plisado.png") 50% 50%/cover no-repeat;
+}
+
+.categorias div:nth-child(3) {
+    background: url("/Imagenes/tres-pliegues.png") 50% 50%/cover no-repeat;
+}
+
+.categorias div:nth-child(4) {
+    background: url("Imagenes/TELAS/voiledelino/voile-de-lino-gris.jpeg") 50% 50%/cover no-repeat;
+}
+
+.categorias div:nth-child(5) {
+    background: url("Imagenes/TELAS/blackout/blackout-athenas.jpeg") 50% 50%/cover no-repeat;
+}
+
+.categorias div:nth-child(6) {
+    background: url("Imagenes/cortina-tablas-chatas.png") 50% 50%/cover no-repeat;
+}
+
+.categorias div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+}
+
+.categorias div:hover::after {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+}
+
+
+/*MEDIAS QUERIES*/
+
+@media screen and (min-width: 768px){
+    .categorias{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr)
+    }
+    .categorias div:nth-child(1) {
+        -ms-grid-row-span: 4;
+        grid-row: span 4;
+    }
+    .categorias div:nth-child(2) {
+        -ms-grid-row-span: 2;
+        grid-row: span 2;
+    }
+    .categorias div:nth-child(4) {
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        grid-column: 3/4;
+        -ms-grid-row-span: 3;
+        grid-row: span 3;
+    }
+    .categorias div:nth-child(5) {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2/3;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
+        grid-row: 3/4;
+    }
+}
