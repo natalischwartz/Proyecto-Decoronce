@@ -5,21 +5,6 @@
     font-family:'Poppins', sans-serif; ;
 }
 
-a{
-    text-decoration: none;
-}
-
-
-.navbar-brand{
-    width: 5%;
-}
-
-h2{
-    font-size: 30px;
-    color: rgba(11, 10, 10, 0.703);
-    font-weight: bold;
-    letter-spacing: 1px;
-}
 
 body{
     width: 100%;
@@ -29,10 +14,37 @@ body{
     background-position: center;
 }
 
-h5{
-    opacity: 0.7;
-    font-size: 40px;
-    color:whitesmoke;
+/*ENLACES*/
+
+a{
+    text-decoration: none;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+
+.navbar-brand{
+    width: 4rem;
+}
+
+.navbar-nav{
+    display: flex;
+    background-color: beige;
+    align-items: flex-end;
+}
+
+
+/*TITULOS Y PÁRRAFOS*/
+
+h2{
+    font-size: 30px;
+    color: rgba(11, 10, 10, 0.703);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 15px;
+    font-weight:bold;
 }
 
 h4{
@@ -42,12 +54,19 @@ h4{
     text-shadow: 1px 1px 3px black;
 }
 
-h3{
-    font-size: 15px;
-    font-weight:bold;
+h5{
+    opacity: 0.7;
+    font-size: 40px;
+    color:whitesmoke;
 }
 
+p{
+    text-shadow: 2px 2px 5px black;
+    font-size: 15px;
+    padding: 5px 5px;
+}
 
+/*CAROUSEL*/
 
 .carousel-inner{ /*contenedor principal*/
     width: 100%;
@@ -61,9 +80,6 @@ h3{
     width: 100%;
     height: 60vh;
 }
-
-
-
 
 .carousel-inner .carousel-item img{
     flex: 0 0 100%;
@@ -81,11 +97,7 @@ h3{
     flex-direction: column;
 }
 
-p{
-    text-shadow: 2px 2px 5px black;
-    font-size: 15px;
-    padding: 5px 5px;
-}
+/*FOOTER*/
 
 .parteAbajo{
     height: 40vh;
@@ -122,6 +134,28 @@ i{
     text-shadow: 2px 2px 2px #000000;
 }
 
+#topBtn{
+        color:green;
+        border: none;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 60px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: unset;
+        
+}
+
+#topBtn:hover {
+        background-color:rgba(0, 128, 0, 0.582);
+        transition:0.3s ease-in;
+}
+
+#topBtn i {
+    font-size: 30px;
+}
+
 .categorias{
     display: grid;
     width: 100%;
@@ -149,11 +183,11 @@ i{
 }
 
 .categorias div:nth-child(2) {
-    background: url("/Imagenes/plisado.png") 50% 50%/cover no-repeat;
+    background: url("Imagenes/plisado.png") 50% 50%/cover no-repeat;
 }
 
 .categorias div:nth-child(3) {
-    background: url("/Imagenes/tres-pliegues.png") 50% 50%/cover no-repeat;
+    background: url("Imagenes/tres-pliegues.png") 50% 50%/cover no-repeat;
 }
 
 .categorias div:nth-child(4) {
@@ -185,6 +219,10 @@ i{
     opacity: 0;
     -webkit-transition: opacity 0.3s ease-in;
     transition: opacity 0.3s ease-in;
+}
+
+iframe{
+    width: 100%;
 }
 
 
