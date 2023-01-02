@@ -8,10 +8,6 @@
 
 body{
     width: 100%;
-    background-image: url("/Imagenes/fondo-de-pantalla2.png");
-    background-repeat:no repeat;
-    background-size:cover;
-    background-position: center;
 }
 
 /*ENLACES*/
@@ -36,7 +32,7 @@ a{
 /*TITULOS Y PÁRRAFOS*/
 
 h2{
-    font-size: 30px;
+    font-size: 20px;
     color: rgba(11, 10, 10, 0.703);
     font-weight: bold;
     letter-spacing: 1px;
@@ -222,6 +218,13 @@ i{
 }
 
 iframe{
+    width: 100%;
+}
+
+
+/*MEDIR CORTINAS*/
+
+.ventanas  div img{
     width: 100%;
 }
 

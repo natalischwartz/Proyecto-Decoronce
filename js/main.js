@@ -23,3 +23,8 @@ function scrollFunction() {
     }   
 }
 
+//NAVBAR
+
+
+
+
