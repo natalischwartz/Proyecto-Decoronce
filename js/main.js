@@ -28,3 +28,6 @@ function scrollFunction() {
 
 
 
+
+//BOTONES CATEGORIAS
+

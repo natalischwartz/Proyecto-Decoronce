@@ -18,15 +18,12 @@ a{
 
 /*BARRA DE NAVEGACIÓN*/
 
+
 .navbar-brand{
     width: 4rem;
 }
 
-.navbar-nav{
-    display: flex;
-    background-color: beige;
-    align-items: flex-end;
-}
+
 
 
 /*TITULOS Y PÁRRAFOS*/
@@ -130,6 +127,10 @@ i{
     text-shadow: 2px 2px 2px #000000;
 }
 
+.boton-principal-alt:hover{
+    color: #fff;
+}
+
 #topBtn{
         color:green;
         border: none;
@@ -219,6 +220,19 @@ i{
 
 iframe{
     width: 100%;
+}
+
+/*Link gasas*/
+
+.fotos img{ /*imagenes*/
+    flex: 0 0 100%;
+    width: 100%;
+    height: 50vh;
+    transition: all 300ms;
+}
+
+.fotos img:hover{
+    transform: scale(1.12)
 }
 
 
