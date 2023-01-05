@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -18,13 +19,14 @@ a{
 
 /*BARRA DE NAVEGACIÓN*/
 
+.navbar{
+    width: 100%;
+    
+}
 
 .navbar-brand{
     width: 4rem;
 }
-
-
-
 
 /*TITULOS Y PÁRRAFOS*/
 
@@ -176,7 +178,7 @@ i{
 }
 
 .categorias div:nth-child(1) {
-    background:url("Imagenes/fondo-de-pantalla.jpg") 50% 50%/cover no-repeat;
+    background:url("Imagenes/TELAS/gasas/gasa-art5415.jpeg") 50% 50%/cover no-repeat;
 }
 
 .categorias div:nth-child(2) {
@@ -238,8 +240,10 @@ iframe{
 
 /*MEDIR CORTINAS*/
 
+
+
 .ventanas  div img{
-    width: 100%;
+    width: 100%;   
 }
 
 
@@ -272,5 +276,15 @@ iframe{
         -ms-grid-row: 3;
         -ms-grid-row-span: 1;
         grid-row: 3/4;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .navbar-toggler{
+        border: none;
+    }
+    .navbar-nav{
+        font-size: 16px;
+        
     }
 }
