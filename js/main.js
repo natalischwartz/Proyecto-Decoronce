@@ -37,6 +37,7 @@ let abrir = document.querySelectorAll(".cta")[0];
 let modal = document.querySelectorAll(".modall")[0];
 let modalC = document.querySelectorAll(".modal-container")[0];
 
+console.log(document.querySelectorAll(".cta"));
 
 abrir.addEventListener("click", function (e){
     e.preventDefault();
