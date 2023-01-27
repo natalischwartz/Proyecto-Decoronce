@@ -32,39 +32,51 @@ function scrollFunction() {
 
 //VENTANA MODAL-blackout
 
-let cerrar = document.querySelectorAll(".close")[0];
-let abrir = document.querySelectorAll(".cta")[0];
-let modal = document.querySelectorAll(".modall")[0];
-let modalC = document.querySelectorAll(".modal-container")[0];
+let cerrar;
+let abrir = document.querySelectorAll(".cta");
+let modal;
+let modalC;
 
-console.log(document.querySelectorAll(".cta"));
 
-abrir.addEventListener("click", function (e){
-    e.preventDefault();
-    modalC.style.opacity = "1";
-    modalC.style.visibility = "visible";
-    modal.classList.toggle("modal-close");
-});
+console.log(abrir);
 
-cerrar.addEventListener("click", function(){
-    modal.classList.toggle("modal-close");
-    
-    setTimeout(function(){
-        modalC.style.opacity = "0";
-        modalC.style.visibility = "hidden";
-    },850);
 
-});
+for (let index = 0; index < abrir.length; index++) {
+    modales(index);
+}
 
-window.addEventListener("click", function(e){
-    console.log(e.target);
-    if(e.target == modalC){
+function modales(index) {
+    abrir[index].addEventListener("click", function (e) {
+        e.preventDefault();
+        cerrar = document.querySelectorAll(".close")[index];
+        modal = document.querySelectorAll(".modall")[index];
+        modalC = document.querySelectorAll(".modal-container")[index];
+        modalC.style.opacity = "1";
+        modalC.style.visibility = "visible";
         modal.classList.toggle("modal-close");
-    
-        setTimeout(function(){
+        console.log(index);
+
+        cerrar.addEventListener("click", function () {
+            modal.classList.toggle("modal-close");
+            setTimeout(function () {
+                modalC.style.opacity = "0";
+                modalC.style.visibility = "hidden";
+            }, 850);
+        });
+
+    });
+
+}
+
+window.addEventListener("click", function (e) {
+    console.log(e.target);
+    if (e.target == modalC) {
+        modal.classList.toggle("modal-close");
+
+        setTimeout(function () {
             modalC.style.opacity = "0";
             modalC.style.visibility = "hidden";
-        },850);
-    
+        }, 850);
+
     };
 });
