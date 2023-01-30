@@ -49,34 +49,12 @@ function modales(index) {
     abrir[index].addEventListener("click", function (e) {
         e.preventDefault();
         cerrar = document.querySelectorAll(".close")[index];
-        modal = document.querySelectorAll(".modall")[index];
         modalC = document.querySelectorAll(".modal-container")[index];
         modalC.style.opacity = "1";
         modalC.style.visibility = "visible";
         modal.classList.toggle("modal-close");
         console.log(index);
-
-        cerrar.addEventListener("click", function () {
-            modal.classList.toggle("modal-close");
-            setTimeout(function () {
-                modalC.style.opacity = "0";
-                modalC.style.visibility = "hidden";
-            }, 850);
-        });
-
     });
 
 }
 
-window.addEventListener("click", function (e) {
-    console.log(e.target);
-    if (e.target == modalC) {
-        modal.classList.toggle("modal-close");
-
-        setTimeout(function () {
-            modalC.style.opacity = "0";
-            modalC.style.visibility = "hidden";
-        }, 850);
-
-    };
-});
