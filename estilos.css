@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif; 
+    font-family:'Lato', sans-serif;
 }
 
 
@@ -48,7 +48,7 @@ h3{
 }
 
 h4{
-    font-size:20px ;
+    font-size:25px;
     color:black;
     font-weight: bolder;
 }
@@ -59,18 +59,15 @@ h5{
     color:whitesmoke;
 }
 
+
 .carousel-caption p{
-    font-size: 16px;
+    font-size: 20px;
     color:#030304;
-    font-weight:700;
-    margin: 10px 10px;
-    line-height: normal;
+    font-weight:bolder;
+    line-height: 1.6rem;
 }
 
-.carousel-caption .texto-ocultas{
-    color:rgb(235, 235, 194);
-    text-shadow: 1px 3px #030304, 3px 2px #030304;
-}
+
 
 .mainNosotros{
     background-image: url("Imagenes/fondo-de-pantalla2.png");
@@ -112,13 +109,7 @@ h5{
     transform: scale(1.12);
 }
 
-.carousel-caption{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 
 /*FOOTER*/
 
