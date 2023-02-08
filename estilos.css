@@ -39,6 +39,7 @@ h2{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
+    color: #030304;
 }
 
 h3{
@@ -49,8 +50,10 @@ h3{
 
 h4{
     font-size:25px;
-    color:black;
+    color: #030304;
     font-weight: bolder;
+    text-shadow: 1px 2px 3px whitesmoke;
+
 }
 
 h5{
@@ -61,10 +64,12 @@ h5{
 
 
 .carousel-caption p{
-    font-size: 20px;
+    font-size: 18px;
     color:#030304;
     font-weight:bolder;
-    line-height: 1.6rem;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    text-shadow: 2px 2px 2px whitesmoke;
 }
 
 
@@ -78,16 +83,16 @@ h5{
 }
 
 .texto-nosotros{
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px 10px;
+    font-size: 18px;
+    margin: 30px 20px;
+    padding: 20px 20px;
     text-shadow: 1px 1px 1px #6aa577 ;
 }
 /*CAROUSEL*/
 
 .carousel-inner{ /*contenedor principal*/
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     border-radius: 2px;
     box-shadow: 0 0 10px grey;
     margin-top: 5px;    
@@ -95,14 +100,14 @@ h5{
 
 .carousel-item{ /*contenedor de las imagenes*/
     width: 100%;
-    height: 60vh;
+    height: 50vh;
 }
 
 .carousel-inner .carousel-item img{
     flex: 0 0 100%;
     transition: all 300ms;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
 }
 
 .carousel-inner .carousel-item img:hover{
@@ -297,8 +302,8 @@ iframe{
     top:5px;
     right:5px;
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background: #c44a4a;
     color: #fff;
     line-height: 12.5px;
