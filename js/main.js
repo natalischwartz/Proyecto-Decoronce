@@ -58,3 +58,20 @@ function modales(index) {
 
 }
 
+//Programando al dar clik a las imagenes, se abre la imagen en grande
+
+const fulImgBox = document.getElementById("fulImgBox"); // es nuestra caja que muestra la foto en el centro
+fulImg = document.getElementById("fulImg");
+
+
+function openFulImg(reference){
+    fulImgBox.style.display = "flex";
+    fulImg.src = reference;
+}
+
+// el parametro reference, va a referenciar al enlace de la imagen
+
+function closeImg() {
+    fulImgBox.style.display = "none";
+}
+

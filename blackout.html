@@ -64,13 +64,18 @@
         </nav>
     </header>
     <main>
+        <div class="ful-img" id="fulImgBox">
+            <img src="Imagenes/TELAS/blackout/blackout-juliette.jpg" id="fulImg" alt="">
+            <span onclick="closeImg()">X</span>
+        </div>
+
         <div>
             <h2 class="text-center">Blackout</h2>
         </div>
         <div class="fotos container">
             <div class="row">
                 <div class="col-6 col-sm-3">
-                    <img src="Imagenes/TELAS/blackout/blackout-juliette.jpg" alt="blackout juliette">
+                    <img src="Imagenes/TELAS/blackout/blackout-juliette.jpg" onclick="openFulImg(this.src)" alt="blackout juliette">
                     <h3 class="mt-2 text-center" >Blackout juliette 2.80 mts ancho</h3>
                     <button type="button" class="btn cta mx-auto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Ver info
@@ -99,7 +104,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-3">
-                    <img src="Imagenes/TELAS/blackout/blackout-lino.athenas.jpg" alt="blackout athenas">
+                    <img src="Imagenes/TELAS/blackout/blackout-lino.athenas.jpg" onclick="openFulImg(this.src)" alt="blackout athenas">
                     <h3 class="mt-2 text-center">Blackout de lino 2.80 mts ancho</h3>
                     <button type="button" class="btn cta mx-auto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         Ver info
@@ -129,7 +134,7 @@
                     
                 </div>
                 <div class="col-6 col-sm-3">
-                    <img src="Imagenes/TELAS/blackout/blackout-melany.jpg" alt="blackout melany">
+                    <img src="Imagenes/TELAS/blackout/blackout-melany.jpg" onclick="openFulImg(this.src)" alt="blackout melany">
                     <h3 class="mt-2 text-center">Blackout melany 2.80 mts ancho</h3>
                     <button type="button" class="btn cta mx-auto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         Ver info
@@ -156,7 +161,7 @@
                     
                 </div>
                 <div class="col-6 col-sm-3">
-                    <img src="Imagenes/TELAS/blackout/blackout-textil.jpg" alt="blackout melany">
+                    <img src="Imagenes/TELAS/blackout/blackout-textil.jpg" onclick="openFulImg(this.src)"  alt="blackout melany">
                     <h3 class="mt-2 text-center">Blackout textil 2.80 mts ancho</h3>
                     <button type="button" class="btn cta mx-auto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                         Ver info
