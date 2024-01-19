@@ -31,9 +31,9 @@
 
 </head>
 <body>
-    <header>
+    <header class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="d-flex ">
                 <a href="./index.html">
                     <img class="navbar-brand" src="Imagenes/icono-decoronce2.png" alt="decoronce Logo">
                 </a>
@@ -62,19 +62,19 @@
         </nav>
     </header>
     <main>
-        <h2 class="text-center mt-5">Telas de cortinería</h2>
+        <h2 class="text-center mt-5 mb-5">Telas de cortinería</h2>
         <section class="categorias container">
-            <div class=" wow animate__animated animate__fadeInLeft"><a class="boton-principal-alt" href="gasas.html">Gasas</a></div>
-            <div class=" wow  animate__animated animate__fadeInUp"><a class="boton-principal-alt" href="voileClasico.html">Voiles</a></div>
-            <div class=" wow  animate__animated animate__fadeInRight"><a class="boton-principal-alt" href="voileDeHilo.html">Voile de hilo</a></div>
-            <div class=" wow  animate__animated animate__fadeInRight "><a class="boton-principal-alt" href="voileDeLino.html">Voile de lino</a></div>
-            <div class=" wow  animate__animated animate__fadeInUp "><a class="boton-principal-alt" href="blackout.html">Blackout</a></div>
-            <div class=" wow animate__animated animate__fadeInUp"><a class="boton-principal-alt" href="jacquard.html">Jacquard</a></div>
+            <div class=" "><a class="boton-principal-alt" href="gasas.html">Gasas</a></div>
+            <div class=""><a class="boton-principal-alt" href="voileClasico.html">Voiles</a></div>
+            <div class=" "><a class="boton-principal-alt" href="voileDeHilo.html">Voile de hilo</a></div>
+            <div class="  "><a class="boton-principal-alt" href="voileDeLino.html">Voile de lino</a></div>
+            <div class=" "><a class="boton-principal-alt" href="blackout.html">Blackout</a></div>
+            <div class=""><a class="boton-principal-alt" href="jacquard.html">Jacquard</a></div>
         </section>
 
 
-        <h2 class="text-center mt-5">Tipos de confección cortinas | Modelos de cabezal </h2>
-        <div id="carouselExampleControls" class="carousel container" data-bs-ride="carousel">
+        <h2 class="text-center mt-5 mb-5">Modelos de cabezal </h2>
+        <div id="carouselExampleControls" class="carousel container mb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="Imagenes/presillas-comunes.jpg" alt="...">
@@ -301,6 +301,25 @@
         <div class="container mt-2 text-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.995789451779!2d-58.40295268477034!3d-34.60426798045936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaec98632b87%3A0x2509066498b19488!2sDecorOnce!5e0!3m2!1ses!2sar!4v1672073823927!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+        <form action="https://formspree.io/f/mayrngzg"
+        method="POST" class="container mt-5" >
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" name="nombre" required id="nombre" placeholder="Nombre">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
+              </div>
+            </div>
+            <div class="mb-3">
+                <label for="consulta" class="form-label">Consulta</label>
+                <textarea class="form-control" id="consulta" name="consulta" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
     </main>
     <footer>
         <div class="parteAbajo wow animate__animated animate__zoomIn ">
